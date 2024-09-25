@@ -7,11 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F72EC862CA356360057ACCA /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1F72EC852CA356360057ACCA /* MarkdownUI */; };
 		1F7347DB2CA345C400C99D03 /* ChatWindowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7347DA2CA345C400C99D03 /* ChatWindowApp.swift */; };
 		1F7347DD2CA345C400C99D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7347DC2CA345C400C99D03 /* ContentView.swift */; };
 		1F7347DF2CA345C500C99D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7347DE2CA345C500C99D03 /* Assets.xcassets */; };
 		1F7347E22CA345C500C99D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7347E12CA345C500C99D03 /* Preview Assets.xcassets */; };
+		1F7347F02CA3469900C99D03 /* NavbarIconApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7347EF2CA3469900C99D03 /* NavbarIconApp.swift */; };
+		1F7347F22CA3469900C99D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7347F12CA3469900C99D03 /* ContentView.swift */; };
+		1F7347F42CA3469B00C99D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7347F32CA3469B00C99D03 /* Assets.xcassets */; };
+		1F7347F72CA3469B00C99D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7347F62CA3469B00C99D03 /* Preview Assets.xcassets */; };
+		1F7348032CA346A900C99D03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348022CA346A900C99D03 /* Cocoa.framework */; };
+		1F7348082CA346A900C99D03 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7348072CA346A900C99D03 /* SourceEditorExtension.swift */; };
+		1F73480A2CA346A900C99D03 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7348092CA346A900C99D03 /* SourceEditorCommand.swift */; };
+		1F73480F2CA346A900C99D03 /* ExtensionFunctionality.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1F7348002CA346A900C99D03 /* ExtensionFunctionality.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F7348142CA3494200C99D03 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348042CA346A900C99D03 /* XcodeKit.framework */; };
+		1F7348152CA3494300C99D03 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348042CA346A900C99D03 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F73480D2CA346A900C99D03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F7347CF2CA345C400C99D03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7347FF2CA346A900C99D03;
+			remoteInfo = ExtensionFunctionality;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F7348132CA346A900C99D03 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F73480F2CA346A900C99D03 /* ExtensionFunctionality.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7348162CA3494300C99D03 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F7348152CA3494300C99D03 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F7347D72CA345C400C99D03 /* ChatWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +66,19 @@
 		1F7347DE2CA345C500C99D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7347E12CA345C500C99D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F7347E32CA345C500C99D03 /* ChatWindow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatWindow.entitlements; sourceTree = "<group>"; };
+		1F7347ED2CA3469900C99D03 /* NavbarIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavbarIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7347EF2CA3469900C99D03 /* NavbarIconApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarIconApp.swift; sourceTree = "<group>"; };
+		1F7347F12CA3469900C99D03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F7347F32CA3469B00C99D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F7347F62CA3469B00C99D03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F7347F82CA3469B00C99D03 /* NavbarIcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavbarIcon.entitlements; sourceTree = "<group>"; };
+		1F7348002CA346A900C99D03 /* ExtensionFunctionality.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtensionFunctionality.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7348022CA346A900C99D03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1F7348042CA346A900C99D03 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		1F7348072CA346A900C99D03 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		1F7348092CA346A900C99D03 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		1F73480B2CA346A900C99D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F73480C2CA346A900C99D03 /* ExtensionFunctionality.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtensionFunctionality.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F72EC862CA356360057ACCA /* MarkdownUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7347EA2CA3469900C99D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7347FD2CA346A900C99D03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7348032CA346A900C99D03 /* Cocoa.framework in Frameworks */,
+				1F7348142CA3494200C99D03 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				1F7347D92CA345C400C99D03 /* ChatWindow */,
+				1F7347EE2CA3469900C99D03 /* NavbarIcon */,
+				1F7348062CA346A900C99D03 /* ExtensionFunctionality */,
+				1F7348012CA346A900C99D03 /* Frameworks */,
 				1F7347D82CA345C400C99D03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				1F7347D72CA345C400C99D03 /* ChatWindow.app */,
+				1F7347ED2CA3469900C99D03 /* NavbarIcon.app */,
+				1F7348002CA346A900C99D03 /* ExtensionFunctionality.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +150,46 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1F7347EE2CA3469900C99D03 /* NavbarIcon */ = {
+			isa = PBXGroup;
+			children = (
+				1F7347EF2CA3469900C99D03 /* NavbarIconApp.swift */,
+				1F7347F12CA3469900C99D03 /* ContentView.swift */,
+				1F7347F32CA3469B00C99D03 /* Assets.xcassets */,
+				1F7347F82CA3469B00C99D03 /* NavbarIcon.entitlements */,
+				1F7347F52CA3469B00C99D03 /* Preview Content */,
+			);
+			path = NavbarIcon;
+			sourceTree = "<group>";
+		};
+		1F7347F52CA3469B00C99D03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F7347F62CA3469B00C99D03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F7348012CA346A900C99D03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F7348022CA346A900C99D03 /* Cocoa.framework */,
+				1F7348042CA346A900C99D03 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F7348062CA346A900C99D03 /* ExtensionFunctionality */ = {
+			isa = PBXGroup;
+			children = (
+				1F7348072CA346A900C99D03 /* SourceEditorExtension.swift */,
+				1F7348092CA346A900C99D03 /* SourceEditorCommand.swift */,
+				1F73480B2CA346A900C99D03 /* Info.plist */,
+				1F73480C2CA346A900C99D03 /* ExtensionFunctionality.entitlements */,
+			);
+			path = ExtensionFunctionality;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +200,55 @@
 				1F7347D32CA345C400C99D03 /* Sources */,
 				1F7347D42CA345C400C99D03 /* Frameworks */,
 				1F7347D52CA345C400C99D03 /* Resources */,
+				1F7348132CA346A900C99D03 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F73480E2CA346A900C99D03 /* PBXTargetDependency */,
+			);
+			name = ChatWindow;
+			packageProductDependencies = (
+				1F72EC852CA356360057ACCA /* MarkdownUI */,
+			);
+			productName = ChatWindow;
+			productReference = 1F7347D72CA345C400C99D03 /* ChatWindow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F7347EC2CA3469900C99D03 /* NavbarIcon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7347F92CA3469B00C99D03 /* Build configuration list for PBXNativeTarget "NavbarIcon" */;
+			buildPhases = (
+				1F7347E92CA3469900C99D03 /* Sources */,
+				1F7347EA2CA3469900C99D03 /* Frameworks */,
+				1F7347EB2CA3469900C99D03 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ChatWindow;
-			productName = ChatWindow;
-			productReference = 1F7347D72CA345C400C99D03 /* ChatWindow.app */;
+			name = NavbarIcon;
+			productName = NavbarIcon;
+			productReference = 1F7347ED2CA3469900C99D03 /* NavbarIcon.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1F7347FF2CA346A900C99D03 /* ExtensionFunctionality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7348102CA346A900C99D03 /* Build configuration list for PBXNativeTarget "ExtensionFunctionality" */;
+			buildPhases = (
+				1F7347FC2CA346A900C99D03 /* Sources */,
+				1F7347FD2CA346A900C99D03 /* Frameworks */,
+				1F7347FE2CA346A900C99D03 /* Resources */,
+				1F7348162CA3494300C99D03 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtensionFunctionality;
+			productName = ExtensionFunctionality;
+			productReference = 1F7348002CA346A900C99D03 /* ExtensionFunctionality.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +263,12 @@
 					1F7347D62CA345C400C99D03 = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					1F7347EC2CA3469900C99D03 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1F7347FF2CA346A900C99D03 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 1F7347D22CA345C400C99D03 /* Build configuration list for PBXProject "ChatWindow" */;
@@ -113,11 +280,16 @@
 				Base,
 			);
 			mainGroup = 1F7347CE2CA345C400C99D03;
+			packageReferences = (
+				1F72EC842CA356360057ACCA /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			productRefGroup = 1F7347D82CA345C400C99D03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1F7347D62CA345C400C99D03 /* ChatWindow */,
+				1F7347FF2CA346A900C99D03 /* ExtensionFunctionality */,
+				1F7347EC2CA3469900C99D03 /* NavbarIcon */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +301,22 @@
 			files = (
 				1F7347E22CA345C500C99D03 /* Preview Assets.xcassets in Resources */,
 				1F7347DF2CA345C500C99D03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7347EB2CA3469900C99D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7347F72CA3469B00C99D03 /* Preview Assets.xcassets in Resources */,
+				1F7347F42CA3469B00C99D03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7347FE2CA346A900C99D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +332,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F7347E92CA3469900C99D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7347F22CA3469900C99D03 /* ContentView.swift in Sources */,
+				1F7347F02CA3469900C99D03 /* NavbarIconApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7347FC2CA346A900C99D03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7348082CA346A900C99D03 /* SourceEditorExtension.swift in Sources */,
+				1F73480A2CA346A900C99D03 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F73480E2CA346A900C99D03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7347FF2CA346A900C99D03 /* ExtensionFunctionality */;
+			targetProxy = 1F73480D2CA346A900C99D03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1F7347E42CA345C500C99D03 /* Debug */ = {
@@ -268,6 +482,7 @@
 		1F7347E72CA345C500C99D03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChatWindow/ChatWindow.entitlements;
@@ -279,6 +494,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +512,7 @@
 		1F7347E82CA345C500C99D03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ChatWindow/ChatWindow.entitlements;
@@ -306,6 +524,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +534,114 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.geninterfaces.ChatWindow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1F7347FA2CA3469B00C99D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NavbarIcon/NavbarIcon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NavbarIcon/Preview Content\"";
+				DEVELOPMENT_TEAM = KFFF9Z9V8N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.geninterfaces.NavbarIcon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F7347FB2CA3469B00C99D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NavbarIcon/NavbarIcon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NavbarIcon/Preview Content\"";
+				DEVELOPMENT_TEAM = KFFF9Z9V8N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.geninterfaces.NavbarIcon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1F7348112CA346A900C99D03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExtensionFunctionality/ExtensionFunctionality.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KFFF9Z9V8N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExtensionFunctionality/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ExtensionFunctionality;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.geninterfaces.ChatWindow.ExtensionFunctionality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F7348122CA346A900C99D03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExtensionFunctionality/ExtensionFunctionality.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KFFF9Z9V8N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExtensionFunctionality/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ExtensionFunctionality;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.softtek.geninterfaces.ChatWindow.ExtensionFunctionality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -340,7 +668,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1F7347F92CA3469B00C99D03 /* Build configuration list for PBXNativeTarget "NavbarIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7347FA2CA3469B00C99D03 /* Debug */,
+				1F7347FB2CA3469B00C99D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7348102CA346A900C99D03 /* Build configuration list for PBXNativeTarget "ExtensionFunctionality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7348112CA346A900C99D03 /* Debug */,
+				1F7348122CA346A900C99D03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F72EC842CA356360057ACCA /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F72EC852CA356360057ACCA /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F72EC842CA356360057ACCA /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F7347CF2CA345C400C99D03 /* Project object */;
 }
