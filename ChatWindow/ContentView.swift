@@ -6,23 +6,34 @@
 //
 import MarkdownUI
 import SwiftUI
+import Combine
+
+class UserDefaultsObserver: ObservableObject {
+    @Published var userDefaultString: String = UserDefaults.standard.string(forKey: "selectedMarkdown") ?? ""
+    
+    private var cancellable: AnyCancellable?
+
+    init() {
+        // Observe changes to UserDefaults
+        cancellable = NotificationCenter.default
+            .publisher(for: UserDefaults.didChangeNotification)
+            .sink { [weak self] _ in
+                self?.userDefaultString = UserDefaults.standard.string(forKey: "selectedMarkdown") ?? ""
+            }
+    }
+}
 
 struct ContentView: View {
+    @StateObject private var observer = UserDefaultsObserver()
     @State private var mdString: String = "None Selected"
     var body: some View {
         VStack{
             Text(mdString == "" ? "None Selected" : mdString)
-//            Button(action: {
-//                print("Click!")
-//                loadMarkdownFromDefaults()
-//            }, label: {
-//                Text("Refresh!")
-//            })
         }
         .onAppear {
             mdString = ""
         }
-        .onChange(of: UserDefaults(suiteName: "group.com.softtek.extension.shared")) { oldValue, newValue in
+        .onChange(of: UserDefaults(suiteName: sharedGroupId)?.string(forKey: "selectedMarkdown")) { oldValue, newValue in
             loadMarkdownFromDefaults()
         }
     }

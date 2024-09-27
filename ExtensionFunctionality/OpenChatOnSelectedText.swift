@@ -43,13 +43,15 @@ class OpenChatOnSelectedText: NSObject, XCSourceEditorCommand {
         } else {
             print("Failed to access shared UserDefaults.")
         }
-        
+        print(chatWindowId)
         // launch chat window if not open
+        if !isAppRunning(bundleIdentifier: menuId){
+            launchApp(bundleIdentifier: menuId)
+            print("Launched MenuTab")
+        }
         if !isAppRunning(bundleIdentifier: chatWindowId){
             launchApp(bundleIdentifier: chatWindowId)
             print("Launched ChatWindow")
-        }else{
-            bringAppToFront(bundleIdentifier: chatWindowId)
         }
         completionHandler(nil)
     }
