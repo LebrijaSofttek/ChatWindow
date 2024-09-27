@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F52CED12CA7202200FC5EF7 /* SharedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52CED02CA7202200FC5EF7 /* SharedUtils.swift */; };
+		1F52CED22CA7206900FC5EF7 /* SharedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52CED02CA7202200FC5EF7 /* SharedUtils.swift */; };
+		1F52CED32CA7206900FC5EF7 /* SharedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52CED02CA7202200FC5EF7 /* SharedUtils.swift */; };
+		1F71CB592CA5D0AF00137F82 /* QuitAppsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71CB582CA5D0AF00137F82 /* QuitAppsCommand.swift */; };
 		1F72EC862CA356360057ACCA /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1F72EC852CA356360057ACCA /* MarkdownUI */; };
 		1F7347DB2CA345C400C99D03 /* ChatWindowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7347DA2CA345C400C99D03 /* ChatWindowApp.swift */; };
 		1F7347DD2CA345C400C99D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7347DC2CA345C400C99D03 /* ContentView.swift */; };
@@ -18,7 +22,7 @@
 		1F7347F72CA3469B00C99D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7347F62CA3469B00C99D03 /* Preview Assets.xcassets */; };
 		1F7348032CA346A900C99D03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348022CA346A900C99D03 /* Cocoa.framework */; };
 		1F7348082CA346A900C99D03 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7348072CA346A900C99D03 /* SourceEditorExtension.swift */; };
-		1F73480A2CA346A900C99D03 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7348092CA346A900C99D03 /* SourceEditorCommand.swift */; };
+		1F73480A2CA346A900C99D03 /* OpenChatOnSelectedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7348092CA346A900C99D03 /* OpenChatOnSelectedText.swift */; };
 		1F73480F2CA346A900C99D03 /* ExtensionFunctionality.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1F7348002CA346A900C99D03 /* ExtensionFunctionality.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F7348142CA3494200C99D03 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348042CA346A900C99D03 /* XcodeKit.framework */; };
 		1F7348152CA3494300C99D03 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348042CA346A900C99D03 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -60,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F52CED02CA7202200FC5EF7 /* SharedUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUtils.swift; sourceTree = "<group>"; };
+		1F71CB582CA5D0AF00137F82 /* QuitAppsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuitAppsCommand.swift; sourceTree = "<group>"; };
 		1F7347D72CA345C400C99D03 /* ChatWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F7347DA2CA345C400C99D03 /* ChatWindowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowApp.swift; sourceTree = "<group>"; };
 		1F7347DC2CA345C400C99D03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,7 +82,7 @@
 		1F7348022CA346A900C99D03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F7348042CA346A900C99D03 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		1F7348072CA346A900C99D03 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		1F7348092CA346A900C99D03 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		1F7348092CA346A900C99D03 /* OpenChatOnSelectedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatOnSelectedText.swift; sourceTree = "<group>"; };
 		1F73480B2CA346A900C99D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F73480C2CA346A900C99D03 /* ExtensionFunctionality.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtensionFunctionality.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +118,7 @@
 		1F7347CE2CA345C400C99D03 = {
 			isa = PBXGroup;
 			children = (
+				1F52CED02CA7202200FC5EF7 /* SharedUtils.swift */,
 				1F7347D92CA345C400C99D03 /* ChatWindow */,
 				1F7347EE2CA3469900C99D03 /* NavbarIcon */,
 				1F7348062CA346A900C99D03 /* ExtensionFunctionality */,
@@ -183,9 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				1F7348072CA346A900C99D03 /* SourceEditorExtension.swift */,
-				1F7348092CA346A900C99D03 /* SourceEditorCommand.swift */,
+				1F7348092CA346A900C99D03 /* OpenChatOnSelectedText.swift */,
 				1F73480B2CA346A900C99D03 /* Info.plist */,
 				1F73480C2CA346A900C99D03 /* ExtensionFunctionality.entitlements */,
+				1F71CB582CA5D0AF00137F82 /* QuitAppsCommand.swift */,
 			);
 			path = ExtensionFunctionality;
 			sourceTree = "<group>";
@@ -329,6 +337,7 @@
 			files = (
 				1F7347DD2CA345C400C99D03 /* ContentView.swift in Sources */,
 				1F7347DB2CA345C400C99D03 /* ChatWindowApp.swift in Sources */,
+				1F52CED22CA7206900FC5EF7 /* SharedUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +347,7 @@
 			files = (
 				1F7347F22CA3469900C99D03 /* ContentView.swift in Sources */,
 				1F7347F02CA3469900C99D03 /* NavbarIconApp.swift in Sources */,
+				1F52CED12CA7202200FC5EF7 /* SharedUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7348082CA346A900C99D03 /* SourceEditorExtension.swift in Sources */,
-				1F73480A2CA346A900C99D03 /* SourceEditorCommand.swift in Sources */,
+				1F52CED32CA7206900FC5EF7 /* SharedUtils.swift in Sources */,
+				1F73480A2CA346A900C99D03 /* OpenChatOnSelectedText.swift in Sources */,
+				1F71CB592CA5D0AF00137F82 /* QuitAppsCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +507,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSBackgroundOnly = NO;
-				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,7 +537,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSBackgroundOnly = NO;
-				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -553,6 +565,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,6 +593,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

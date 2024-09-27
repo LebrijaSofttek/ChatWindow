@@ -12,15 +12,18 @@ struct ContentView: View {
     var body: some View {
         VStack{
             Text(mdString == "" ? "None Selected" : mdString)
-            Button(action: {
-                print("Click!")
-                loadMarkdownFromDefaults()
-            }, label: {
-                Text("Refresh!")
-            })
+//            Button(action: {
+//                print("Click!")
+//                loadMarkdownFromDefaults()
+//            }, label: {
+//                Text("Refresh!")
+//            })
         }
         .onAppear {
             mdString = ""
+        }
+        .onChange(of: UserDefaults(suiteName: "group.com.softtek.extension.shared")) { oldValue, newValue in
+            loadMarkdownFromDefaults()
         }
     }
     private func loadMarkdownFromDefaults() {
