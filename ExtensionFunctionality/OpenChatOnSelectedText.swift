@@ -10,8 +10,6 @@ import XcodeKit
 import SwiftUI
 
 class OpenChatOnSelectedText: NSObject, XCSourceEditorCommand {
-    @StateObject var bundles = GlobalVariables()
-
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         print("Starting command execution...")
         
@@ -39,7 +37,7 @@ class OpenChatOnSelectedText: NSObject, XCSourceEditorCommand {
         let pasteboardString = "```\n\(text)\n```"
         
         // Save to UserDefaults
-        if let sharedDefaults = UserDefaults(suiteName: "group.com.softtek.extension.shared") {
+        if let sharedDefaults = UserDefaults(suiteName: sharedGroupId) {
             sharedDefaults.set(pasteboardString, forKey: "selectedMarkdown")
             print("Markdown text saved to shared UserDefaults.")
         } else {
@@ -47,11 +45,11 @@ class OpenChatOnSelectedText: NSObject, XCSourceEditorCommand {
         }
         
         // launch chat window if not open
-        if !isAppRunning(bundleIdentifier: bundles.chatWindowId){
-            launchApp(bundleIdentifier: bundles.chatWindowId)
+        if !isAppRunning(bundleIdentifier: chatWindowId){
+            launchApp(bundleIdentifier: chatWindowId)
             print("Launched ChatWindow")
         }else{
-            bringAppToFront(bundleIdentifier: bundles.chatWindowId)
+            bringAppToFront(bundleIdentifier: chatWindowId)
         }
         completionHandler(nil)
     }

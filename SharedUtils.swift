@@ -8,10 +8,9 @@
 import Foundation
 import AppKit
 
-class GlobalVariables: ObservableObject {
-    @Published var chatWindowId: String = "com.softtek.geninterfaces.ChatWindow"
-    @Published var menuId: String = "com.softtek.geninterfaces.NavbarIcon"
-}
+let chatWindowId: String = "com.softtek.geninterfaces.ChatWindow"
+let menuId: String = "com.softtek.geninterfaces.NavbarIcon"
+let sharedGroupId :String = "group.com.softtek.extension.shared"
 
 func launchApp(bundleIdentifier: String) -> Void{
     // Retrieve the URL for the application using its bundle identifier

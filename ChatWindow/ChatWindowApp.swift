@@ -12,7 +12,7 @@ struct ChatWindowApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .frame(minWidth: 400, minHeight: 600)
+                .frame(minWidth: 300, minHeight: 500)
         }
     }
 }

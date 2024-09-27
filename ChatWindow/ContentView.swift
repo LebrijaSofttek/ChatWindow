@@ -27,7 +27,7 @@ struct ContentView: View {
         }
     }
     private func loadMarkdownFromDefaults() {
-            if let sharedDefaults = UserDefaults(suiteName: "group.com.softtek.extension.shared"),
+            if let sharedDefaults = UserDefaults(suiteName: sharedGroupId),
                let savedString = sharedDefaults.string(forKey: "selectedMarkdown") {
                 mdString = savedString
                 print("Loaded: \(savedString)")

@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var bundles = GlobalVariables()
-
     var body: some View {
         VStack {
             //App Name
             Text("Frida GPT")
             //quit apps
             Button(action: {
-                if !isAppRunning(bundleIdentifier: bundles.chatWindowId){
-                    launchApp(bundleIdentifier: bundles.chatWindowId)
+                if !isAppRunning(bundleIdentifier: chatWindowId){
+                    launchApp(bundleIdentifier: chatWindowId)
                 }
             }, label: {
                 Text("open chat")
@@ -25,8 +23,8 @@ struct ContentView: View {
             Divider()
             //quit apps
             Button(action: {
-                if isAppRunning(bundleIdentifier: bundles.chatWindowId){
-                    closeApp(bundleIdentifier: bundles.chatWindowId)
+                if isAppRunning(bundleIdentifier: chatWindowId){
+                    closeApp(bundleIdentifier: chatWindowId)
                     print("quit chat")
                 }
                 NSApp.terminate(nil)

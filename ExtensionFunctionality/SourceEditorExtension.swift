@@ -11,12 +11,10 @@ import AppKit
 import SwiftUI
 
 class SourceEditorExtension: NSObject, XCSourceEditorExtension {
-    @StateObject var bundles = GlobalVariables()
-    
     func extensionDidFinishLaunching() {
         // If your extension needs to do any work at launch, implement this optional method.
-        if !isAppRunning(bundleIdentifier: bundles.menuId){
-            launchApp(bundleIdentifier: bundles.menuId)
+        if !isAppRunning(bundleIdentifier: menuId){
+            launchApp(bundleIdentifier: menuId)
             print("Launched Menu")
         }
     }

@@ -20,12 +20,12 @@
 		1F7347F22CA3469900C99D03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7347F12CA3469900C99D03 /* ContentView.swift */; };
 		1F7347F42CA3469B00C99D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7347F32CA3469B00C99D03 /* Assets.xcassets */; };
 		1F7347F72CA3469B00C99D03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7347F62CA3469B00C99D03 /* Preview Assets.xcassets */; };
-		1F7348032CA346A900C99D03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348022CA346A900C99D03 /* Cocoa.framework */; };
 		1F7348082CA346A900C99D03 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7348072CA346A900C99D03 /* SourceEditorExtension.swift */; };
 		1F73480A2CA346A900C99D03 /* OpenChatOnSelectedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7348092CA346A900C99D03 /* OpenChatOnSelectedText.swift */; };
 		1F73480F2CA346A900C99D03 /* ExtensionFunctionality.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1F7348002CA346A900C99D03 /* ExtensionFunctionality.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F7348142CA3494200C99D03 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348042CA346A900C99D03 /* XcodeKit.framework */; };
 		1F7348152CA3494300C99D03 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348042CA346A900C99D03 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FAD2EF82CA7299000CCC83D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7348022CA346A900C99D03 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7348032CA346A900C99D03 /* Cocoa.framework in Frameworks */,
+				1FAD2EF82CA7299000CCC83D /* Cocoa.framework in Frameworks */,
 				1F7348142CA3494200C99D03 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
